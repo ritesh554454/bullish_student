@@ -44,3 +44,6 @@ Jenkin setup ::
         6.Any paramter if you are building a customer parameter job.
         7.Post build steps like email on success or report mapping if you want.
     5. Execute/build job.
+
+Sonar setup ::
+
