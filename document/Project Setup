@@ -1,0 +1,46 @@
+Project Setup ::
+
+    1.Start a new project from start.spring.io or you can do the same from intelliJ as well.
+
+Project exectuion ::
+
+    1.Import project in your IDE and do a maven clean & install.
+    2.Bring up the application using StudentsApplication class (execute as java application).
+
+Unit Test::
+
+    1.Run StudentControllerTest from test directory.This will execute unit test
+
+    Unit test coverage ::
+        1.Get api call with validation of response code and total number of student present in db.
+        2.Put api call with validation of response code,total number of student present in db and updated param value done as part of put call.
+        3.Post api call with validation of response code,total number of student present in db with new added student as well.
+        4.Delete api call with validation of response code,total number of student present in db with new deleted student as well.
+
+     Note::All above scnearios are executed with 2 different set of test data under 8 test cases.
+
+Cucumber Test::
+
+    1.Run StudentRunner from test directory.This will execute cucumber test
+
+    Cucumber test coverage ::
+        1.Get api call with validation of response code and total number of student present in db.
+        2.Put api call with validation of response code,total number of student present in db and updated param value done as part of put call.
+        3.Post api call with validation of response code,total number of student present in db with new added student as well.
+        4.Delete api call with validation of response code,total number of student present in db with new deleted student as well.
+
+     Note::All above scnearios are executed with 2 different set of test data under 8 test cases.
+
+Jenkin setup ::
+    1.Bring up Jenkin server and add local slave in server config.
+    2.Make sure java/git path is correct in slave config and add a label for the slave.
+    3.Add ssh key for slave/server setup.
+    4.Create a new job and provide following info in job ::
+        1.Project url
+        2.Branch name.
+        3.Slave name
+        4.Setting.xml path if you are using a custom setting.xml
+        5.Java name/path.
+        6.Any paramter if you are building a customer parameter job.
+        7.Post build steps like email on success or report mapping if you want.
+    5. Execute/build job.
